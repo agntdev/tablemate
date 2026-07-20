@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Make Reservation",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Initiates guest booking flow"
+            }
+          }
+        ],
+        "send": {
+          "callback": "booking:start"
+        }
+      }
+    ]
+  }
+]
