@@ -1,0 +1,20 @@
+[
+  {
+    "name": "View Bookings",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Owner dashboard for managing bookings"
+            }
+          }
+        ],
+        "send": {
+          "callback": "owner:dashboard"
+        }
+      }
+    ]
+  }
+]
